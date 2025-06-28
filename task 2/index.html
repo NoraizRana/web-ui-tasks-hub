@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CREATIVE<span>SPARK</span></h1>
+    
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <button id="modeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Your Imagination, Our Creation</h2>
+      <p>We build modern, responsive, and creative websites for your business.</p>
+      <button onclick="openModal()">Let's Talk</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93" alt="Hero Image">
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <img src="https://img.icons8.com/ios-filled/100/code.png" alt="Web Dev">
+        <h3>Web Development</h3>
+        <p>Building stunning websites with the latest tech stack.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/ios-filled/100/light-on.png" alt="Branding">
+        <h3>Branding</h3>
+        <p>Creating brand identities that stand out in the crowd.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/ios-filled/100/video-editing.png" alt="Media">
+        <h3>Media & Content</h3>
+        <p>Designing content that engages and converts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio-gallery">
+      <a href="https://unsplash.com/photos/6anudmpILw4" target="_blank">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project 1" />
+      </a>
+      <a href="https://unsplash.com/photos/Im7lZjxeLhg" target="_blank">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Project 2" />
+      </a>
+      <a href="https://unsplash.com/photos/LSmQYCnVgYc" target="_blank">
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620" alt="Project 3" />
+      </a>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-container">
+      <p id="testimonialText">“These guys are top-notch. The site was beyond expectations!”</p>
+      <p id="testimonialAuthor">Alex Johnson</p>
+      <button onclick="nextTestimonial()">→</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CreativeSpark Agency</p>
+    <div class="socials">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/github.png" alt="GitHub"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="LinkedIn"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter"/></a>
+    </div>
+  </footer>
+
+  <div id="contactModal" class="modal hidden">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h3>Contact Us</h3>
+      <p>Email: hello@creativespark.dev</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
