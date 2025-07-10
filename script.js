@@ -81,10 +81,10 @@ function updateActiveNavLink() {
 // Navbar Background on Scroll
 function updateNavbarBackground() {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
         navbar.style.backdropFilter = 'blur(20px)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
     }
 }
@@ -435,7 +435,7 @@ function createCursorTrail() {
         position: fixed;
         width: 20px;
         height: 20px;
-        background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(8, 145, 178, 0.3) 0%, transparent 70%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;

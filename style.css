@@ -7,22 +7,22 @@
 
 /* CSS Variables */
 :root {
-    /* Dark Theme Colors */
-    --primary-bg: #0a0a0a;
-    --secondary-bg: #151515;
-    --card-bg: #1e1e1e;
-    --accent-color: #6366f1;
-    --accent-hover: #4f46e5;
-    --text-primary: #ffffff;
-    --text-secondary: #b3b3b3;
-    --text-muted: #808080;
-    --border-color: #333333;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.2);
-    --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.3);
+    /* Light Theme Colors */
+    --primary-bg: #f8fafc;
+    --secondary-bg: #ffffff;
+    --card-bg: #ffffff;
+    --accent-color: #0891b2;
+    --accent-hover: #0e7490;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    --gradient-secondary: linear-gradient(135deg, #0891b2 0%, #1e40af 100%);
+    --gradient-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.12);
     
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -151,11 +151,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
     transition: all var(--transition-normal);
+    box-shadow: var(--shadow-light);
 }
 
 .nav-container {
@@ -227,7 +228,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, var(--primary-bg) 70%);
+    background: radial-gradient(ellipse at center, rgba(8, 145, 178, 0.08) 0%, var(--primary-bg) 70%);
     padding-top: 80px;
 }
 
@@ -338,7 +339,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+    background: conic-gradient(from 0deg, transparent, rgba(8, 145, 178, 0.1), transparent);
     animation: rotate 6s linear infinite;
     z-index: -1;
 }
@@ -772,7 +773,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--secondary-bg);
+    background: var(--border-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -797,6 +798,7 @@ body {
         transition: var(--transition-normal);
         box-shadow: var(--shadow-medium);
         padding: var(--spacing-lg) 0;
+        border: 1px solid var(--border-color);
     }
 
     .nav-menu.active {
@@ -882,6 +884,69 @@ body {
 
     .hero-image .image-placeholder {
         width: 200px;
+        height: 200px;
+    }
+}
+
+/* Image Styling for when placeholders are replaced */
+.profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid var(--border-color);
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-medium);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--accent-color);
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+}
+
+.technologies-showcase img {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Additional responsive image adjustments */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .technologies-showcase img {
         height: 200px;
     }
 }
