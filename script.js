@@ -78,14 +78,18 @@ function updateActiveNavLink() {
     });
 }
 
-// Navbar Background on Scroll
+// Modern Navbar Effects on Scroll
 function updateNavbarBackground() {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.backdropFilter = 'blur(20px)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.3)';
+        navbar.style.backdropFilter = 'blur(25px)';
+        navbar.style.boxShadow = '0 8px 32px rgba(31, 38, 135, 0.5)';
+        navbar.style.transform = 'translateX(-50%) scale(0.95)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.25)';
+        navbar.style.backdropFilter = 'blur(20px)';
+        navbar.style.boxShadow = '0 8px 32px rgba(31, 38, 135, 0.37)';
+        navbar.style.transform = 'translateX(-50%) scale(1)';
     }
 }
 
@@ -433,13 +437,14 @@ function createCursorTrail() {
     cursor.className = 'cursor-trail';
     cursor.style.cssText = `
         position: fixed;
-        width: 20px;
-        height: 20px;
-        background: radial-gradient(circle, rgba(8, 145, 178, 0.3) 0%, transparent 70%);
+        width: 25px;
+        height: 25px;
+        background: radial-gradient(circle, rgba(255, 107, 107, 0.4) 0%, rgba(78, 205, 196, 0.3) 30%, transparent 70%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
         transition: transform 0.1s ease;
+        filter: blur(2px);
     `;
     
     document.body.appendChild(cursor);
