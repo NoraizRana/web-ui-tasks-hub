@@ -5,23 +5,23 @@ A modern, responsive portfolio website built with pure HTML, CSS, and JavaScript
 ## 🌟 Features
 
 ### Design & Styling
-- **Ultra-Modern Glassmorphism Theme** - Cutting-edge design with glass morphism effects, vibrant gradients, and floating elements
+- **Sophisticated Jewel Tone Theme** - Premium dark design with jewel-inspired colors, elegant typography, and refined layouts
 - **Responsive Design** - Fully responsive across all devices (desktop, tablet, mobile)
 - **CSS Grid & Flexbox** - Modern layout techniques for optimal positioning
 - **Gradient Effects** - Beautiful gradients used throughout the design
 - **Custom Scrollbar** - Styled scrollbar matching the theme
 
 ### Animations & Interactions
-- **Advanced CSS Animations** - Sophisticated keyframe animations and transitions
-- **Glassmorphism Effects** - Modern frosted glass appearance with backdrop blur
-- **3D Transforms** - Cards and elements with perspective and rotation effects
-- **Rainbow Text Animation** - Animated gradient text with moving colors
-- **Floating Elements** - Subtle floating animations throughout the design
-- **Morphing Navigation** - Dynamic navbar that scales and adapts on scroll
-- **Neon Glow Effects** - Glowing shadows and borders on hover
-- **Gradient Animations** - Continuously shifting background gradients
-- **Advanced Hover States** - Multi-layered hover effects with transforms
-- **Cursor Trail** - Enhanced gradient cursor trail (desktop only)
+- **Elegant CSS Animations** - Sophisticated fade-in and scaling animations
+- **Jewel Tone Gradients** - Rich, sophisticated color combinations throughout
+- **Professional Hover States** - Refined hover effects with subtle transforms
+- **Shimmer Text Effects** - Elegant animated gradient text
+- **Grid Pattern Overlay** - Subtle animated background grid
+- **Advanced Typography** - Premium font treatment with perfect spacing
+- **Sophisticated Shadows** - Layered shadow system for depth
+- **Border Animations** - Elegant expanding border effects
+- **Premium Visual Hierarchy** - Clear, professional content organization
+- **Refined Cursor Effects** - Subtle, professional cursor interactions
 
 ### Interactive Elements
 - **Navigation Highlighting** - Active section highlighting in navigation
@@ -342,18 +342,24 @@ Replace image placeholders with your actual images:
 - Safari (latest)
 - Edge (latest)
 
-## 🎨 Color Palette
+## 🎨 Sophisticated Color Palette
 
-- **Primary Background**: Linear gradient (#667eea to #764ba2)
-- **Glass Elements**: Translucent white with backdrop blur
-- **Accent Colors**: 
-  - Coral (#ff6b6b)
-  - Turquoise (#4ecdc4) 
-  - Sky Blue (#45b7d1)
-  - Golden (#f9ca24)
-  - Purple (#6c5ce7)
-  - Pink (#fd79a8)
-- **Text**: Pure white with varying opacity
+- **Primary Background**: Rich dark purple (#1a1625)
+- **Secondary Background**: Deep charcoal (#252036)
+- **Tertiary Background**: Elegant dark gray (#2f2b3a)
+
+**Jewel Tone Accents:**
+- **Emerald**: #50c878 (Primary accent)
+- **Sapphire**: #0f52ba (Secondary accent)
+- **Ruby**: #e0115f (Highlight accent)
+- **Amethyst**: #9966cc (Tertiary accent)
+- **Topaz**: #ffc87c (Warm accent)
+- **Opal**: #a8c3bc (Cool accent)
+
+**Typography:**
+- **Primary Text**: Ghost white (#f8f8ff)
+- **Secondary Text**: Light gray (#d1d5db)
+- **Muted Text**: Medium gray (#9ca3af)
 
 ## 📈 Performance Features
 
@@ -372,25 +378,25 @@ For questions about this portfolio template, you can reach out through the conta
 
 ---
 
-## ✨ Ultra-Modern Theme Showcase
+## ✨ Sophisticated Jewel Tone Portfolio
 
-The portfolio has been completely redesigned with a **cutting-edge glassmorphism theme**:
+The portfolio has been completely redesigned with a **premium, sophisticated jewel tone theme**:
 
-### 🔥 **What's New:**
-- **Glassmorphism Design** - Frosted glass elements with backdrop blur effects
-- **Vibrant Gradient Backgrounds** - Dynamic, animated gradient backgrounds
-- **3D Visual Effects** - Floating cards with perspective and depth
-- **Neon Glow Elements** - Futuristic glow effects and shadows
-- **Rainbow Text Animations** - Continuously shifting gradient text
-- **Advanced Hover States** - Multi-dimensional transforms and effects
-- **Floating Navigation** - Modern navbar that morphs and scales
-- **Enhanced Animations** - Sophisticated keyframe animations throughout
+### � **What's New:**
+- **Jewel-Inspired Design** - Rich, elegant colors inspired by precious gems
+- **Sophisticated Dark Theme** - Premium dark backgrounds with excellent readability
+- **Refined Typography** - Elegant font treatments and perfect spacing
+- **Professional Layouts** - Clean, organized content presentation
+- **Subtle Animations** - Elegant, refined motion that enhances UX
+- **Advanced Grid System** - Sophisticated background patterns and overlays
+- **Premium Visual Hierarchy** - Clear content organization and flow
+- **Elegant Hover Effects** - Sophisticated interactions without being flashy
 
 ### 🎯 **Design Philosophy:**
-- **Modern & Trendy** - Uses latest 2024 design trends
-- **Glassmorphism First** - Consistent glass morphism throughout
-- **Vibrant Color Palette** - Eye-catching gradient combinations
-- **Smooth Interactions** - Buttery smooth animations and transitions
-- **3D Visual Depth** - Layered elements with perspective effects
+- **Professional Excellence** - Designed for serious professionals and creatives
+- **Sophisticated Elegance** - Refined aesthetics that command respect
+- **Jewel Tone Psychology** - Colors that convey luxury, trust, and creativity
+- **Readability First** - Excellent contrast and typography for accessibility
+- **Subtle Sophistication** - Elegant without being overwhelming
 
 **Note**: This portfolio is designed to be easily customizable. Replace the placeholder content and images with your own information to create your unique professional portfolio.

@@ -78,18 +78,18 @@ function updateActiveNavLink() {
     });
 }
 
-// Modern Navbar Effects on Scroll
+// Sophisticated Navbar Effects on Scroll
 function updateNavbarBackground() {
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.3)';
-        navbar.style.backdropFilter = 'blur(25px)';
-        navbar.style.boxShadow = '0 8px 32px rgba(31, 38, 135, 0.5)';
-        navbar.style.transform = 'translateX(-50%) scale(0.95)';
+        navbar.style.background = 'rgba(26, 22, 37, 0.98)';
+        navbar.style.backdropFilter = 'blur(30px)';
+        navbar.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.3)';
+        navbar.style.borderBottom = '1px solid rgba(80, 200, 120, 0.5)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.25)';
-        navbar.style.backdropFilter = 'blur(20px)';
-        navbar.style.boxShadow = '0 8px 32px rgba(31, 38, 135, 0.37)';
-        navbar.style.transform = 'translateX(-50%) scale(1)';
+        navbar.style.background = 'rgba(26, 22, 37, 0.95)';
+        navbar.style.backdropFilter = 'blur(25px)';
+        navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+        navbar.style.borderBottom = '1px solid rgba(80, 200, 120, 0.3)';
     }
 }
 
@@ -437,14 +437,14 @@ function createCursorTrail() {
     cursor.className = 'cursor-trail';
     cursor.style.cssText = `
         position: fixed;
-        width: 25px;
-        height: 25px;
-        background: radial-gradient(circle, rgba(255, 107, 107, 0.4) 0%, rgba(78, 205, 196, 0.3) 30%, transparent 70%);
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(circle, rgba(80, 200, 120, 0.4) 0%, rgba(15, 82, 186, 0.2) 50%, transparent 70%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
         transition: transform 0.1s ease;
-        filter: blur(2px);
+        filter: blur(1px);
     `;
     
     document.body.appendChild(cursor);
