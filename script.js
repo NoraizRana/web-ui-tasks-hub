@@ -67,7 +67,7 @@ function handleActiveNavLink() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - 200) {
+        if (window.pageYOffset >= sectionTop - 150) {
             current = section.getAttribute('id');
         }
     });
@@ -274,7 +274,7 @@ function isValidEmail(email) {
 function smoothScrollTo(targetId) {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-        const offsetTop = targetElement.offsetTop - 70; // Account for fixed navbar
+        const offsetTop = targetElement.offsetTop - 90; // Account for fixed navbar height
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'

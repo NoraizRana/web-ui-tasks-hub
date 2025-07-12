@@ -53,6 +53,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     transition: all 0.3s ease;
+    height: 80px; /* Fixed navbar height */
 }
 
 .navbar.scrolled {
@@ -67,6 +68,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    height: 100%; /* Full height of navbar */
 }
 
 .logo-text {
@@ -131,7 +133,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 20px;
+    padding: 100px 20px 0 20px; /* Added top padding for navbar */
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
 }
 
@@ -324,7 +326,12 @@ body {
 
 /* Section Styling */
 section {
-    padding: 80px 0;
+    padding: 100px 0;
+}
+
+/* Adjust first section (hero) padding */
+section:first-of-type {
+    padding-top: 0;
 }
 
 .section-header {
@@ -778,7 +785,7 @@ section {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 80px; /* Match navbar height */
         flex-direction: column;
         background-color: var(--dark-bg);
         width: 100%;
@@ -823,6 +830,10 @@ section {
         align-items: center;
     }
 
+    .hero {
+        padding: 120px 20px 40px 20px; /* Increased top padding for mobile */
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -854,6 +865,10 @@ section {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+
+    .hero {
+        padding: 140px 15px 40px 15px; /* Extra padding for small screens */
     }
 
     .hero-title {
