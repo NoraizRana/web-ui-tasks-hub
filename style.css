@@ -133,8 +133,9 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 100px 20px 0 20px; /* Added top padding for navbar */
+    padding: 100px 20px 60px 20px; /* Added top and bottom padding */
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    margin-bottom: 40px; /* Add margin to separate from next section */
 }
 
 .hero-container {
@@ -326,17 +327,21 @@ body {
 
 /* Section Styling */
 section {
-    padding: 100px 0;
+    padding: 120px 0;
+    scroll-margin-top: 90px; /* For smooth scrolling with fixed navbar */
 }
 
 /* Adjust first section (hero) padding */
 section:first-of-type {
     padding-top: 0;
+    scroll-margin-top: 0;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+    position: relative;
+    z-index: 1; /* Ensure section headers are above other content */
 }
 
 .section-title {
@@ -356,6 +361,21 @@ section:first-of-type {
 /* About Section */
 .about {
     background: var(--dark-bg);
+    padding-top: 140px; /* Extra padding to ensure proper separation */
+    margin-top: 50px; /* Additional margin for clear separation */
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
 }
 
 .about-description {
@@ -831,7 +851,13 @@ section:first-of-type {
     }
 
     .hero {
-        padding: 120px 20px 40px 20px; /* Increased top padding for mobile */
+        padding: 120px 20px 60px 20px; /* Increased top and bottom padding for mobile */
+        margin-bottom: 30px;
+    }
+
+    .about {
+        padding-top: 100px; /* Adjust for mobile */
+        margin-top: 30px;
     }
 
     .contact-content {
@@ -868,7 +894,13 @@ section:first-of-type {
     }
 
     .hero {
-        padding: 140px 15px 40px 15px; /* Extra padding for small screens */
+        padding: 140px 15px 60px 15px; /* Extra padding for small screens */
+        margin-bottom: 20px;
+    }
+
+    .about {
+        padding-top: 80px; /* Adjust for small screens */
+        margin-top: 20px;
     }
 
     .hero-title {

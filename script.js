@@ -67,7 +67,7 @@ function handleActiveNavLink() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - 150) {
+        if (window.pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
@@ -274,7 +274,12 @@ function isValidEmail(email) {
 function smoothScrollTo(targetId) {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-        const offsetTop = targetElement.offsetTop - 90; // Account for fixed navbar height
+        let offsetTop;
+        if (targetId === 'home') {
+            offsetTop = 0; // Scroll to top for home
+        } else {
+            offsetTop = targetElement.offsetTop - 100; // Account for fixed navbar height and extra spacing
+        }
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
