@@ -67,7 +67,7 @@ function handleActiveNavLink() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - 200) {
+        if (window.pageYOffset >= sectionTop - 100) {
             current = section.getAttribute('id');
         }
     });
@@ -278,7 +278,7 @@ function smoothScrollTo(targetId) {
         if (targetId === 'home') {
             offsetTop = 0; // Scroll to top for home
         } else {
-            offsetTop = targetElement.offsetTop - 100; // Account for fixed navbar height and extra spacing
+            offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar height
         }
         window.scrollTo({
             top: offsetTop,

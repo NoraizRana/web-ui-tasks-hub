@@ -133,15 +133,16 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 100px 20px 60px 20px; /* Added top and bottom padding */
+    padding: 0 20px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-    margin-bottom: 40px; /* Add margin to separate from next section */
+    padding-top: 0; /* Remove extra padding */
 }
 
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    padding-top: 80px; /* Account for navbar */
 }
 
 .hero-content {
@@ -327,8 +328,8 @@ body {
 
 /* Section Styling */
 section {
-    padding: 120px 0;
-    scroll-margin-top: 90px; /* For smooth scrolling with fixed navbar */
+    padding: 80px 0;
+    scroll-margin-top: 80px; /* For smooth scrolling with fixed navbar */
 }
 
 /* Adjust first section (hero) padding */
@@ -340,8 +341,6 @@ section:first-of-type {
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
-    position: relative;
-    z-index: 1; /* Ensure section headers are above other content */
 }
 
 .section-title {
@@ -361,21 +360,6 @@ section:first-of-type {
 /* About Section */
 .about {
     background: var(--dark-bg);
-    padding-top: 140px; /* Extra padding to ensure proper separation */
-    margin-top: 50px; /* Additional margin for clear separation */
-    position: relative;
-}
-
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: var(--gradient-primary);
-    border-radius: 2px;
 }
 
 .about-description {
@@ -851,13 +835,11 @@ section:first-of-type {
     }
 
     .hero {
-        padding: 120px 20px 60px 20px; /* Increased top and bottom padding for mobile */
-        margin-bottom: 30px;
+        padding: 0 20px;
     }
 
-    .about {
-        padding-top: 100px; /* Adjust for mobile */
-        margin-top: 30px;
+    .hero-container {
+        padding-top: 120px; /* More space for mobile navbar */
     }
 
     .contact-content {
@@ -894,13 +876,11 @@ section:first-of-type {
     }
 
     .hero {
-        padding: 140px 15px 60px 15px; /* Extra padding for small screens */
-        margin-bottom: 20px;
+        padding: 0 15px;
     }
 
-    .about {
-        padding-top: 80px; /* Adjust for small screens */
-        margin-top: 20px;
+    .hero-container {
+        padding-top: 140px; /* Extra space for small screens */
     }
 
     .hero-title {
