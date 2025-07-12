@@ -278,7 +278,8 @@ function smoothScrollTo(targetId) {
         if (targetId === 'home') {
             offsetTop = 0; // Scroll to top for home
         } else {
-            offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar height
+            // Account for fixed navbar height and ensure proper section visibility
+            offsetTop = targetElement.offsetTop - 90;
         }
         window.scrollTo({
             top: offsetTop,

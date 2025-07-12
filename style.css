@@ -16,6 +16,7 @@ body {
     background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
     background-attachment: fixed;
     overflow-x: hidden;
+    position: relative;
 }
 
 /* Color Variables */
@@ -129,13 +130,14 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     padding: 0 20px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-    padding-top: 0; /* Remove extra padding */
+    z-index: 1;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -330,12 +332,18 @@ body {
 section {
     padding: 80px 0;
     scroll-margin-top: 80px; /* For smooth scrolling with fixed navbar */
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: block;
+    clear: both;
 }
 
 /* Adjust first section (hero) padding */
 section:first-of-type {
     padding-top: 0;
     scroll-margin-top: 0;
+    z-index: 1;
 }
 
 .section-header {
@@ -360,6 +368,10 @@ section:first-of-type {
 /* About Section */
 .about {
     background: var(--dark-bg);
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    border-top: 1px solid rgba(51, 65, 85, 0.3);
 }
 
 .about-description {
@@ -403,6 +415,8 @@ section:first-of-type {
 /* Skills Section */
 .skills {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    position: relative;
+    z-index: 3;
 }
 
 .skills-grid {
@@ -458,6 +472,8 @@ section:first-of-type {
 /* Technologies Section */
 .technologies {
     background: var(--dark-bg);
+    position: relative;
+    z-index: 4;
 }
 
 .tech-tabs {
@@ -544,6 +560,8 @@ section:first-of-type {
 /* Projects Section */
 .projects {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    position: relative;
+    z-index: 5;
 }
 
 .projects-grid {
@@ -659,6 +677,8 @@ section:first-of-type {
 /* Contact Section */
 .contact {
     background: var(--dark-bg);
+    position: relative;
+    z-index: 6;
 }
 
 .contact-content {
@@ -759,6 +779,8 @@ section:first-of-type {
     background: var(--dark-bg);
     border-top: 1px solid var(--border-color);
     padding: 2rem 0;
+    position: relative;
+    z-index: 7;
 }
 
 .footer-content {
@@ -842,6 +864,11 @@ section:first-of-type {
         padding-top: 120px; /* More space for mobile navbar */
     }
 
+    /* Ensure sections don't overlap on mobile */
+    section {
+        margin-bottom: 0;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -881,6 +908,11 @@ section:first-of-type {
 
     .hero-container {
         padding-top: 140px; /* Extra space for small screens */
+    }
+
+    /* Ensure sections don't overlap on small screens */
+    section {
+        margin-bottom: 0;
     }
 
     .hero-title {
