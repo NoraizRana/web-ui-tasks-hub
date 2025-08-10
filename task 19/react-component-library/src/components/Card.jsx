@@ -13,7 +13,7 @@ export default function Card({
         <img src={image} alt={title} className="w-full h-40 object-cover" />
       )}
       <div className="p-4">
-        {title && <h3 className="text-lg mb-2 font-semibold mb-1 dark:text-white">{title}</h3>}
+        {title && <h3 className="text-lg mb-1 font-sans font-semibold mb-1 dark:text-white">{title}</h3>}
         {description && <p className="text-gray-500 dark:text-gray-300 mb-2">{description}</p>}
         {children}
       </div>
