@@ -5,8 +5,8 @@ export default function DarkModeToggle({ isDark, toggle }) {
     <button
       aria-label="Toggle Dark Mode"
       onClick={toggle}
-      className="ml-auto flex items-center px-2 py-2 rounded-md 
-        bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 
+      className="ml-auto flex items-center mx-1 px-2 py-2 rounded-md 
+        bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-600 
         transition-colors shadow text-gray-700 dark:text-gray-100"
     >
       <span className="mr-2">{isDark ? "Dark" : "Light"}</span>
